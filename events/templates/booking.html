@@ -5,5 +5,14 @@ Booking{% endblock title %}
 
 
 {% block content %}
-Booking Page
+
+<div class="container p-3 text-center">
+    <h3>Book Your Events</h3>
+<form action="" method="post">
+    {% csrf_token %}
+{{ form.as_p }}
+
+    <button class="btn text-center">submit</button>
+</form>
+</div>
 {% endblock content %}
