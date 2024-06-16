@@ -1,0 +1,80 @@
+.imgs{
+    background-image: url("img/hotelmain.jpg");
+    background-size: cover;
+    background-position: center;
+
+    height: 100vh;
+    
+}
+.left{
+    background-color: rgb(67, 57, 57,0.5);
+    color: white;
+    border: solid 1px #ccc;
+    border-right: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+
+    
+    
+}
+.right{
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+    border: solid 1px #393535;
+    border-left: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+
+
+}
+ 
+.texts{
+    color: black;
+}
+.wrapper{
+    display: inline-flex;
+
+}
+.wrapper .icon{
+    margin: 0 20px;
+    cursor: pointer;
+}
+.wrapper .icon span{
+    height: 60px;
+    width: 60px;
+    display: block;
+    background: #fff;
+    text-align: center;
+    /* text-shadow: 0px -1px rgba(0,0,0,0.4); */
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    border-radius: 50%;
+}
+span i{
+    font-size: 25px;
+    font-size: 20px;
+}
+.tooltip{
+    background:n#fff;
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+}
+.facebook{
+    background: #3B5999;
+    border-left: 1px solid #2E4476;
+    box-shadow: 0px 5px 0px #2E4476;
+}
+.twitter{
+    background: #46c1F6;
+    border-left: 1px solid #269BD0;
+    box-shadow: 0px 5px 0px 0px #269BD0;
+}
+.instagram{
+    background: #e1306c;
+    border-left: 1px solid #c91d56;
+    box-shadow: 0px 5px 0px 0px #c91d56 ;
+}
+.youtube{
+    background: #DE463B;
+    border-left: 1px solid #C02B21;
+    box-shadow: 0px 0px 0px 0px #C02B21;
+}
