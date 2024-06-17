@@ -1,8 +1,7 @@
 {% extends "base.html" %}
-
+{% load crispy_forms_tags %}
 {% block title %}
 Booking{% endblock title %}
-
 
 {% block content %}
 
@@ -10,9 +9,9 @@ Booking{% endblock title %}
     <h3>Book Your Events</h3>
 <form action="" method="post">
     {% csrf_token %}
-{{ form.as_p }}
+{{ form|crispy }}
 
-    <button class="btn text-center">submit</button>
+    <button class="btn btn-info text-center">Confirm Booking</button>
 </form>
 </div>
 {% endblock content %}

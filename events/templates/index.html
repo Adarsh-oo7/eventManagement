@@ -33,46 +33,78 @@ Home{% endblock title %}
       <span class="sr-only">Next</span>
     </a>
   </div> -->
+  
   <div class="imgs">
+               {% for message in messages %}
+                <script>
+                  alert('{{message}}')
+                </script>
+                {% endfor %}
      <div class="container">
       <div class="row pt-5">
-        <div class="col-6 left py-5 px-2" >
+        <div class="col-12 col-sm-6 left py-5 px-2" >
           <h2 class="title text-center">Star Hotel</h2>
           <p class="title p-2">&nbsp;&nbsp;&nbsp;Welcome to Star Hotel, where elegance meets comfort in the heart of the city. Our beautifully appointed rooms offer a serene escape, equipped with modern amenities to ensure a delightful stay. Indulge in gourmet dining at our on-site restaurant, unwind at our state-of-the-art spa, and enjoy top-notch service from our dedicated staff. Whether you're traveling for business or leisure, Star Hotel promises a memorable experience with unparalleled hospitality. Join us for a stay that's truly out of this world.</p>
+          <h5>Google rating</h5>
+          <span class = "fa fa-star checked"></span>
+          <span class = "fa fa-star checked"></span>
+          <span class = "fa fa-star checked"></span>
+          <span class = "fa fa-star checked"></span>
+          <span class = "fa fa-star unchecked"></span>
+          <!-- To display unchecked star rating icons -->
           
         </div>
-        <div class="col-6 py-5 px-2 right">
+        <div class="col-12 col-sm-6  py-5 px-2 right ">
           <h2 class="text-center">Bookings</h2>
           <h4 >Room Booking</h4>
           <p class="texts">Experience comfort and style in our well-appointed hotel rooms, perfect for business or leisure travelers seeking a relaxing stay.</p>
+         
+          
+          <button class="btn btn-dark ml-5">--Book room here--</button>
           <h4>Event Booking</h4>
           <p class="texts">Host your next event with us in our flexible and modern venues, ideal for a variety of gatherings from intimate meetings to festive celebrations.</p>
+          <a href="{% url 'booking'%}" class=" btn-dark btn ml-5">--Event Booking--</a>
 
         </div>
       </div>
 
     </div> 
+
+
+
+    <div class="forCenter text-center">
+    <div class="wrapper text-center mt-3">
+      <div class="icon facebook">
+         <div class="tooltip">
+            Facebook
+         </div>
+         <span><i class="fab fa-facebook-f"></i></span>
+      </div>
+      <div class="icon twitter">
+         <div class="tooltip">
+            Twitter
+         </div>
+         <span><i class="fab fa-twitter"></i></span>
+      </div>
+      <div class="icon instagram">
+         <div class="tooltip">
+            Instagram
+         </div>
+         <span><i class="fab fa-instagram"></i></span>
+      </div>
+     
+      <div class="icon youtube">
+         <div class="tooltip">
+            YouTube
+         </div>
+         <span><i class="fab fa-youtube"></i></span>
+      </div>
+   </div>
   </div>
 
-  <div class="wrapper">
-    <div class="icon facebook">
-      <div class="tooltip">Facebook</div>
-      <span><i class="fab fa-facebook-f"></i></span>
-    </div>
-    <div class="icon twitter">
-      <div class="tooltip">twitter</div>
-      <span><i class="fa-brands fa-twitter"></i></span>
-    </div>
-    <div class="icon instagram">
-      <div class="tooltip">instagram</div>
-      <span><i class="fa-brands fa-instagram"></i>
-      </span>
-    </div>
-    <div class="icon youtube">
-      <div class="tooltip">YouTube</div>
-      <span><i class="fa-brands fa-youtube"></i></span>
-    </div>
   </div>
+
+ 
 
  
 {% endblock content %}

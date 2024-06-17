@@ -42,3 +42,7 @@ def login(request):
             messages.info(request,'check the username and password')
             return redirect('login')
     return render(request,'log.html')
+
+def logout(request):
+    auth.logout(request)
+    return redirect('login')
