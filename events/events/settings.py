@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'eventapp',
     'userapp',
     'crispy_forms',
-    'crispy_bootstrap5'
+    'crispy_bootstrap5',
+    "phonenumber_field"
 ]
 
 CRISPY_TEMPLATE_PACK ='bootstrap5'
