@@ -14,4 +14,17 @@ Booking{% endblock title %}
     <button class="btn btn-info text-center">Confirm Booking</button>
 </form>
 </div>
+
+<hr>
+<br>
+
+<div class="container p-3 text-center">
+    <h3>Book Your Room here</h3>
+<form action="" method="post">
+    {% csrf_token %}
+{{ form|crispy }}
+
+    <button class="btn btn-info text-center">Confirm Booking</button>
+</form>
+</div>
 {% endblock content %}

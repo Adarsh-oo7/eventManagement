@@ -1,0 +1,3 @@
+;/*FB_PKG_DELIM*/
+
+__d("PolarisStoriesV3AboutThisAccountDialog.react",["AboutThisAccountRefererTypes","PolarisAboutThisAccountDialog.next.react","react"],(function(a,b,c,d,e,f,g){"use strict";var h,i=(h||(h=d("react"))).c,j=h;function a(a){var b=i(3),d=a.onClose;a=a.userId;var e;b[0]!==d||b[1]!==a?(e=j.jsx(c("PolarisAboutThisAccountDialog.next.react"),{onClose:d,referer_type:c("AboutThisAccountRefererTypes").STORY,user_id:a}),b[0]=d,b[1]=a,b[2]=e):e=b[2];return e}g["default"]=a}),98);

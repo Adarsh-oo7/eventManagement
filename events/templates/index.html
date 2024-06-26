@@ -60,7 +60,7 @@ Home{% endblock title %}
           <p class="texts">Experience comfort and style in our well-appointed hotel rooms, perfect for business or leisure travelers seeking a relaxing stay.</p>
          
           
-          <button class="btn btn-dark ml-5">--Book room here--</button>
+          <a href="{% url 'roombooking'%}" class="btn btn-dark ml-5">--Book room here--</a>
           <h4>Event Booking</h4>
           <p class="texts">Host your next event with us in our flexible and modern venues, ideal for a variety of gatherings from intimate meetings to festive celebrations.</p>
           <a href="{% url 'booking'%}" class=" btn-dark btn ml-5">--Event Booking--</a>
@@ -72,8 +72,8 @@ Home{% endblock title %}
 
 
 
-    <div class="forCenter text-center">
-    <div class="wrapper text-center mt-3">
+    <div class="forCenter text-center mb-4">
+    <div class="wrapper text-center mt-3 mb-3">
       <div class="icon facebook">
          <div class="tooltip">
             Facebook

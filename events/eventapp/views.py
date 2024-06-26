@@ -35,7 +35,7 @@ def roombooking(request):
     else:
         form=roomBookingForm()
         dic={'form':form}
-    return render (request,'booking.html',dic)
+    return render (request,'roombooking.html',dic)
 
 def contact(request):
     return render(request,'contact.html')

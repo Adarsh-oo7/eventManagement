@@ -1,9 +1,9 @@
 .imgs{
     background-image: url("img/hotelmain.jpg");
     background-size: cover;
-    background-position: center;
-
-    height: 100vh;
+  
+    background-attachment: fixed;
+    height: 100%;
     
 }
 .left{

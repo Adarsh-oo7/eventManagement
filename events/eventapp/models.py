@@ -34,3 +34,6 @@ class roomBooking(models.Model):
     booking_date=models.DateField()
     vacate_date=models.DateField()
     booking_on=models.DateField(auto_now=True)
+
+    def __str__(self):
+        return self.cus_name
